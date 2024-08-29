@@ -1,21 +1,11 @@
----
+version: '3'
 
-version: '2'
 services:
   ansiblecontroller:
     build:
-      context: ./ansible
-      dockerfile: Dockerfile
+      context: ansible
+
 
   ubuntu:
     build:
-      context: ./ubuntu
-      dockerfile: Dockerfile
-
-
-
-  centos7:
-    build:
-      context: ./centos7
-      dockerfile: Dockerfile
-
+      context: ubuntu
