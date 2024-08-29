@@ -1,6 +1,4 @@
-FROM tutum/ubuntu
+FROM mmumshad/ubuntu-ssh-enabled
 
 RUN apt-get update
-RUN rm -f /set_root_pw.sh
 RUN echo "root:pass" | chpasswd
-
