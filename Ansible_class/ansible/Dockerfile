@@ -1,7 +1,7 @@
-FROM tutum/ubuntu
+FROM mmumshad/ubuntu-ssh-enabled
 
 RUN apt-get update
 RUN apt-get install vim -y
-RUN rm -f /set_root_pw.sh
+RUN apt-get install nano -y
 RUN echo "root:pass" | chpasswd
 
